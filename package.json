@@ -1,0 +1,31 @@
+{
+  "name": "node-raft-over-mqtt",
+  "version": "1.0.0",
+  "description": "Implementing the Raft consensus algorithm over MQTT for building resilient and distributed systems across multiple nodes.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubyte-source/node-raft-over-mqtt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ubyte-source/node-raft-over-mqtt/issues"
+  },
+  "homepage": "https://github.com/ubyte-source/node-raft-over-mqtt#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "raft",
+    "raft-over-mqtt",
+    "raft-over-mqtt-secure",
+    "ubyte"
+  ],
+  "author": "Paolo Fabris",
+  "license": "MIT",
+  "dependencies": {
+    "node-mqtt-client": "^1.1.2"
+  }
+}
