@@ -77,7 +77,7 @@ For detailed configuration options and parameters for the `MQTTClient`, please r
 
 Returns the instance of the `NodePresenceManager` associated with the node.
 
-**Returns:**  
+* **Returns:**  
 `NodePresenceManager` - The presence manager instance.
 
 ##### `logFunction`
@@ -93,7 +93,7 @@ Gets or sets the log function.
 
 Gets the leader's metric value.
 
-**Returns:**  
+* **Returns:**  
 `number` - The current leader metric.
 
 #### RaftNode Public Methods
@@ -105,7 +105,7 @@ Initializes a new RaftNode instance if it does not exist.
 - `mqttClient` (`MQTTClient`): The MQTT client instance.
 - `uuid` (`string`): The unique identifier for the node.
 
-**Returns:**  
+  - **Returns:**  
 `RaftNode` - The instance of the RaftNode.
 
 ##### `log(message)`
@@ -122,18 +122,18 @@ Starts the Raft node and initializes its state.
 
 Checks if the current node is the leader.
 
-**Returns:**  
+  - **Returns:**  
 `boolean` - `true` if the node is a leader, otherwise `false`.
 
 ## Versioning
 
-We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ubyte-source/certificate-authority/tags). 
+We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ubyte-source/node-raft-over-mqtt/tags). 
 
 ## Authors
 
 * **Paolo Fabris** - *Initial work* - [ubyte.it](https://ubyte.it/)
 
-See also the list of [contributors](https://github.com/ubyte-source/certificate-authority/blob/main/CONTRIBUTORS.md) who participated in this project.
+See also the list of [contributors](https://github.com/ubyte-source/node-raft-over-mqtt/blob/main/CONTRIBUTORS.md) who participated in this project.
 
 ## License
 
