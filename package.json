@@ -1,8 +1,8 @@
 {
   "name": "node-raft-over-mqtt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Implementing the Raft consensus algorithm over MQTT for building resilient and distributed systems across multiple nodes.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
@@ -26,6 +26,6 @@
   "author": "Paolo Fabris",
   "license": "MIT",
   "dependencies": {
-    "node-mqtt-client": "^1.2.0"
+    "node-mqtt-client": "^1.2.1"
   }
 }
