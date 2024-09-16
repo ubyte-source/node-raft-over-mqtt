@@ -69,7 +69,7 @@ For detailed configuration options and parameters for the `MQTTClient`, please r
 |-----------------------|------------|---------------------------------------------------------------------|----------------|
 | `electionTimeout`     | `number`   | The timeout duration in milliseconds for the election process.      | `8000`         |
 | `heartbeatInterval`   | `number`   | The interval in milliseconds between heartbeats sent by the leader. | `2000`         |
-| `metricFunction`      | `Function` | The function used to calculate the node's metric for elections.      | `() => 1e6` |
+| `metric`              | `number` | The value used as the node's metric for leader elections. Lower values are considered better. |
 
 #### RaftNode Public Variables
 
@@ -88,6 +88,16 @@ Gets or sets the log function.
   - **Returns:** `Function` - The log function.
 - **Set:** Sets a new log function for logging messages.
   - **Parameters:** `func` (`Function`): The new log function.
+
+#### `metric`
+
+Gets or sets the metric value used in leader elections.
+
+- **Get:** Returns the current metric value.
+  - **Returns:** `number` - The metric value.
+
+- **Set:** Sets a new metric value.
+  - **Parameters:** `value` (`number`): The new metric value.
 
 ##### `leaderMetric` (Read-only)
 
